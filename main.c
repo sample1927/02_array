@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     str[2] = 4;
     str[3] = -5;
     str[4] = 7;
-    str[5] = -4
+    str[5] = -5;
     
     while(fgets(str, sizeof(str), stdin)){
         printf("%s", str);
