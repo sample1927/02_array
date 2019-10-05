@@ -9,7 +9,7 @@ int main(void)
         i = 0;
         while(i != 1){ 
     printf("数字を入力してください。\n");
-    scanf_s("%s", str[a]);
+    scanf("%s", str[a]);
             if(str[a] <= 100 && -100 <= str[a]){
                 printf("対象外の数字です。\n");
                 i = 1;
