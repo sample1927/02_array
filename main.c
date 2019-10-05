@@ -13,7 +13,7 @@ int main(void)
             if(str[a] <= 100 && -100 <= str[a]){
                 printf("対象外の数字です。\n");
                 i = 1;
-            }
+            
         }
         
         if(str[a] < 0){
