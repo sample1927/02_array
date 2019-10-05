@@ -7,7 +7,11 @@ int main(int argc, char *argv[])
     printf("数字を入力してください。\n");
     scanf_s("%5s", str, 4);
     while(fgets(str, sizeof(str), stdin)){
-        printf("%s", str);
+        if(-100 <= str && str <= 100){
+           printf("%s", str);
+        }else{
+            printf("対応してません\n");
+    }
     }
 
     return 0;
