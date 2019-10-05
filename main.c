@@ -1,18 +1,29 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) 
+int main(void) 
 {
     char str[5];
+    int a = 0, i = 0;
     
+    while(a != 4){
+        i = 0;
+        while(i != 1){ 
     printf("数字を入力してください。\n");
-    scanf_s("%5s", str, 4);
-    while(fgets(str, sizeof(str), stdin)){
-        if(-100 <= str && str <= 100){
-           printf("%s", str);
-        }else{
-            printf("対応してません\n");
+    scanf_s("%s", str[a]);
+            if(str[a] <= 100 && -100 <= str[a]){
+                printf("対象外の数字です。\n");
+                i = 1;
+            }
+        }
+        
+        if(str[a] < 0){
+            str[a] -= str[a] * 2;
+            
+       a++;
     }
+    for(a = 0; a <= 4; a++){
+           printf("%s\n", str[a]);
     }
-
+    
     return 0;
 }
