@@ -9,7 +9,7 @@ int main(void)
         i = 0;
         while(i != 1){ 
     printf("数字を入力してください。\n");
-    scanf("%s", str[a]);
+    scanf("%d", str[a]);
             if(str[a] <= 100 && -100 <= str[a]){
                 printf("対象外の数字です。\n");
                 i = 1;
@@ -22,7 +22,7 @@ int main(void)
        a++;
     }
     for(a = 0; a <= 4; a++){
-           printf("%s\n", str[a]);
+           printf("%d\n", str[a]);
     }
     
     return 0;
